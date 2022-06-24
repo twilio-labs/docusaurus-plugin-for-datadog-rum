@@ -18,12 +18,12 @@ yarn add @twilio-labs/docusaurus-plugin-datadog-rum
 
 Accepted fields:
 
-| Name            | Type     | Default                | Description                                           |
-| --------------- | -------- | ---------------------- | ----------------------------------------------------- |
-| `clientToken`   | `string` | **Required**           | The client token for your Datadog RUM application     |
-| `applicationId` | `string` | **Required**           | The application ID for your Datadog RUM application   |
-| `service`       | `string` | `"docusaurus"`         | The name your service will show within the Datadog UI |
-| `env`           | `string` | `process.env.NODE_ENV` | The environment of your deployed application          |
+| Name            | Type     | Default                         | Description                                           |
+| --------------- | -------- | ------------------------------- | ----------------------------------------------------- |
+| `clientToken`   | `string` | **Required**                    | The client token for your Datadog RUM application     |
+| `applicationId` | `string` | **Required**                    | The application ID for your Datadog RUM application   |
+| `service`       | `string` | `"docusaurus"`                  | The name your service will show within the Datadog UI |
+| `env`           | `string` | `process.env.NODE_ENV ?? "dev"` | The environment of your deployed application          |
 
 To create your application:
 

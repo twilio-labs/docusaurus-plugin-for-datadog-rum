@@ -11,7 +11,7 @@ export default function pluginDatadogRum(
   { clientToken, applicationId, service, env }: PluginOptions
 ): Plugin {
   service = service ?? "docusaurus";
-  env = env ?? process.env.NODE_ENV;
+  env = env ?? process.env.NODE_ENV ?? "dev";
 
   return {
     name: "docusaurus-plugin-datadog-rum",
@@ -53,7 +53,7 @@ const pluginOptionsSchema = Joi.object<PluginOptions>({
   clientToken: Joi.string().required(),
   applicationId: Joi.string().required(),
   service: Joi.string().default("docusaurus"),
-  env: Joi.string().default(process.env.NODE_ENV),
+  env: Joi.string().default(process.env.NODE_ENV ?? "dev"),
 });
 
 export function validateOptions({
