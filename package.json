@@ -1,6 +1,6 @@
 {
   "name": "@twilio-labs/docusaurus-plugin-datadog-rum",
-  "version": "0.1.0-pre1",
+  "version": "0.1.0-pre2",
   "description": "Datadog RUM plugin for Docusaurus.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
