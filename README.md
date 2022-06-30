@@ -1,17 +1,17 @@
-# docusaurus-plugin-datadog-rum
+# docusaurus-plugin-for-datadog-rum
 
 Integrates [Datadog RUM](https://docs.datadoghq.com/real_user_monitoring/#what-is-real-user-monitoring) with your Docusaurus site.
 
 ## Installation
 
 ```bash
-npm install --save @twilio-labs/docusaurus-plugin-datadog-rum
+npm install --save @twilio-labs/docusaurus-plugin-for-datadog-rum
 ```
 
 **Or, if you prefer Yarn:**
 
 ```bash
-yarn add @twilio-labs/docusaurus-plugin-datadog-rum
+yarn add @twilio-labs/docusaurus-plugin-for-datadog-rum
 ```
 
 ## Configuration
@@ -46,7 +46,7 @@ To create your application:
 ```js
   plugins: [
     [
-      "@twilio-labs/docusaurus-plugin-datadog-rum",
+      "@twilio-labs/docusaurus-plugin-for-datadog-rum",
       {
         clientToken: "3EBOWfRPv8qwertyZXCvbnMAsD2f1g0Hf96",
         applicationId: "01234567-89ab-cdef-0123-456789abcdef",

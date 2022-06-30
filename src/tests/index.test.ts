@@ -1,7 +1,7 @@
 import { HtmlTagObject, HtmlTags, LoadContext } from "@docusaurus/types";
 import plugin, { PluginOptions } from "../index";
 
-describe("docusaurus-plugin-datadog-rum", () => {
+describe("docusaurus-plugin-for-datadog-rum", () => {
   const fakeOptions: PluginOptions = {
     clientToken: "FAKE-CLIENT-TOKEN",
     applicationId: "FAKE-APPLICATION-ID",
