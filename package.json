@@ -1,7 +1,7 @@
 {
-  "name": "@twilio-labs/docusaurus-plugin-datadog-rum",
-  "version": "0.1.0-pre3",
-  "description": "Datadog RUM plugin for Docusaurus.",
+  "name": "@twilio-labs/docusaurus-plugin-for-datadog-rum",
+  "version": "0.1.0",
+  "description": "Docusaurus plugin that adds Datadog RUM to your site.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "publishConfig": {
@@ -16,7 +16,7 @@
     "ci": "yarn install --frozen-lockfile",
     "prepare": "husky install"
   },
-  "repository": "https://github.com/twilio-labs/docusaurus-plugin-datadog-rum",
+  "repository": "https://github.com/twilio-labs/docusaurus-plugin-for-datadog-rum",
   "license": "MIT",
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.21",

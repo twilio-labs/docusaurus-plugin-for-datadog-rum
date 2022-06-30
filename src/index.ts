@@ -14,7 +14,7 @@ export default function pluginDatadogRum(
   env = env ?? process.env.NODE_ENV ?? "dev";
 
   return {
-    name: "docusaurus-plugin-datadog-rum",
+    name: "docusaurus-plugin-for-datadog-rum",
 
     injectHtmlTags() {
       if (!clientToken || !applicationId) {
