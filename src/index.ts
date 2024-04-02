@@ -8,10 +8,11 @@ import type { PluginOptions, Options } from "./options";
 
 export default function pluginDatadogRum(
   context: LoadContext,
-  { clientToken, applicationId, service, env }: PluginOptions
+  { clientToken, applicationId, service, site, env }: PluginOptions
 ): Plugin {
   service = service ?? "docusaurus";
   env = env ?? process.env.NODE_ENV ?? "dev";
+  site = site ?? "datadoghq.com";
 
   return {
     name: "docusaurus-plugin-for-datadog-rum",
@@ -33,10 +34,10 @@ DD_RUM.onReady(function() {
   DD_RUM.init({
     clientToken: '${clientToken}',
     applicationId: '${applicationId}',
-    site: 'datadoghq.com',
+    site: '${site}',
     service: '${service}',
     env: '${env}',
-    // Specify a version number to identify the deployed version of your application in Datadog 
+    // Specify a version number to identify the deployed version of your application in Datadog
     // version: '1.0.0',
     sampleRate: 100,
     trackInteractions: true,
@@ -53,6 +54,7 @@ const pluginOptionsSchema = Joi.object<PluginOptions>({
   clientToken: Joi.string().required(),
   applicationId: Joi.string().required(),
   service: Joi.string().default("docusaurus"),
+  site: Joi.string().default("datadoghq.com"),
   env: Joi.string().default(process.env.NODE_ENV ?? "dev"),
 });
 

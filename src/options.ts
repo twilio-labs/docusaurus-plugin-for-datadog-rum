@@ -2,6 +2,7 @@ export type PluginOptions = {
   clientToken: string;
   applicationId: string;
   service?: string;
+  site?: string;
   env?: string;
 };
 

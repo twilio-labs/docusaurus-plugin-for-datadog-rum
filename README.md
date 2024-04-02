@@ -24,6 +24,7 @@ Accepted fields:
 | `applicationId` | `string` | **Required**                    | The application ID for your Datadog RUM application   |
 | `service`       | `string` | `"docusaurus"`                  | The name your service will show within the Datadog UI |
 | `env`           | `string` | `process.env.NODE_ENV ?? "dev"` | The environment of your deployed application          |
+| `site`          | `string` | `"datadoghq.com"`               | The site URL of your Datadog instance                 |
 
 To create your application:
 
@@ -50,7 +51,9 @@ To create your application:
       {
         clientToken: "3EBOWfRPv8qwertyZXCvbnMAsD2f1g0Hf96",
         applicationId: "01234567-89ab-cdef-0123-456789abcdef",
-        service: "my-docusaurus-site"
+        service: "my-docusaurus-site",
+        // if in Europe
+        site: "datadoghq.eu"
       },
     ],
   ],
