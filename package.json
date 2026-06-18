@@ -17,6 +17,10 @@
     "prepare": "husky install"
   },
   "repository": "https://github.com/twilio-labs/docusaurus-plugin-for-datadog-rum",
+  "homepage": "https://github.com/twilio-labs/docusaurus-plugin-for-datadog-rum#readme",
+  "bugs": {
+    "url": "https://github.com/twilio-labs/docusaurus-plugin-for-datadog-rum/issues"
+  },
   "license": "MIT",
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.21",
